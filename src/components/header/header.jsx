@@ -20,13 +20,14 @@ export default function Header() {
             </div>
 
             {/* Content layer */}
-            <div className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-4 transition-colors duration-500">
-                {/* Logo */}
+
+            {/* <div className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-4 transition-colors duration-500">
+               
                 <div className="flex items-center gap-3">
                     <img src="/logo.png" alt="Techneium Logo" className="h-14" />
                 </div>
 
-                {/* Navigation */}
+              
                 <nav className={`hidden md:flex items-center gap-8 ${scrolled ? "text-white" : "text-black"}`}>
 
                     <div className="relative group">
@@ -43,15 +44,15 @@ export default function Header() {
                             </svg>
                         </a>
 
-                        {/* Dropdown menu */}
+                 
                         <div
                             className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50"
                         >
                             <div className="p-4 space-y-4">
-                                {/* Dropdown items */}
+                           
                                 <div className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded-md transition">
                                     <div className="bg-gray-100 p-2 rounded-md">
-                                        <img src="" alt="AI Gateway" className="w-6 h-6" />
+                                        <i className="fa-solid fa-lock text-xl"></i>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-sm text-gray-600">Cyber Security</h4>
@@ -61,7 +62,7 @@ export default function Header() {
 
                                 <div className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded-md transition">
                                     <div className="bg-gray-100 p-2 rounded-md">
-                                        <img src="" alt="WAAP" className="w-6 h-6" />
+                                        <i className="fa-solid fa-lock text-xl"></i>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-sm text-gray-600">Data</h4>
@@ -71,7 +72,7 @@ export default function Header() {
 
                                 <div className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded-md transition">
                                     <div className="bg-gray-100 p-2 rounded-md">
-                                        <img src="" alt="WAAP" className="w-6 h-6" />
+                                        <i className="fa-solid fa-lock text-xl"></i>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-sm text-gray-600">Application</h4>
@@ -89,15 +90,15 @@ export default function Header() {
                             </svg>
                         </a>
 
-                        {/* Dropdown menu */}
+                 
                         <div
                             className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50"
                         >
                             <div className="p-4 space-y-4">
-                                {/* Dropdown items */}
+                              
                                 <div className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded-md transition">
                                     <div className="bg-gray-100 p-2 rounded-md">
-                                        <img src="" alt="AI Gateway" className="w-6 h-6" />
+                                        <i className="fa-solid fa-lock text-2xl"></i>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-sm text-gray-600">Assurance</h4>
@@ -107,7 +108,7 @@ export default function Header() {
 
                                 <div className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded-md transition">
                                     <div className="bg-gray-100 p-2 rounded-md">
-                                        <img src="" alt="WAAP" className="w-6 h-6" />
+                                        <i className="fa-solid fa-lock text-2xl"></i>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-sm text-gray-600">Awareness</h4>
@@ -117,7 +118,7 @@ export default function Header() {
 
                                 <div className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded-md transition">
                                     <div className="bg-gray-100 p-2 rounded-md">
-                                        <img src="" alt="WAAP" className="w-6 h-6" />
+                                        <i className="fa-solid fa-lock text-2xl"></i>
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-sm text-gray-600">Expert Services</h4>
@@ -153,57 +154,26 @@ export default function Header() {
                     </a>
                 </nav>
 
-                {/* Mobile menu toggle */}
-
-                {/* <div className="md:hidden">
-                    <button
-                        onClick={() => setMobileOpen(!mobileOpen)}
-                        className="text-black dark:text-white focus:outline-none"
-                    >
-                        {mobileOpen ? (
-                            // X icon
-                            <svg
-                                className="w-10 h-10"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                viewBox="0 0 24 24"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        ) : (
-                            // Hamburger icon
-                            <svg
-                                className="w-10 h-10"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                viewBox="0 0 24 24"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        )}
-                    </button>
-                </div> */}
+          
 
                 <div className="md:hidden">
                     <button
                         onClick={() => setMobileOpen(!mobileOpen)}
                         className="relative w-10 h-10 flex flex-col justify-center items-center"
                     >
-                        {/* Top bar */}
+                     
                         <span
                             className={`absolute w-6 h-0.5 bg-black transform transition duration-300 ease-in-out
         ${mobileOpen ? "rotate-45 translate-y-[2px]" : "-translate-y-2"}`}
                         ></span>
 
-                        {/* Middle bar */}
+                      
                         <span
                             className={`absolute w-6 h-0.5 bg-black transition-opacity duration-300 ease-in-out
         ${mobileOpen ? "opacity-0" : "opacity-100"}`}
                         ></span>
 
-                        {/* Bottom bar */}
+                   
                         <span
                             className={`absolute w-6 h-0.5 bg-black transform transition duration-300 ease-in-out
         ${mobileOpen ? "-rotate-45 -translate-y-[2px]" : "translate-y-2"}`}
@@ -211,13 +181,182 @@ export default function Header() {
                     </button>
                 </div>
 
+            </div> */}
+
+            <div className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-4 transition-colors duration-500">
+                {/* Logo */}
+                <div className="flex items-center gap-3">
+                    <img src="/logo.png" alt="Techneium Logo" className="h-14" />
+                </div>
+
+                {/* Navigation */}
+                <nav className={`hidden md:flex items-center gap-8 ${scrolled ? "text-white" : "text-black"}`}>
+
+                    {/* Solutions */}
+                    <div className="relative group">
+                        <a href="#solutions" className="flex items-center gap-1 hover:text-brandYellow transition">
+                            Solutions
+                            <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        {/* Dropdown */}
+                        <div className="
+                absolute top-full left-0 mt-0 w-80 bg-white rounded-lg shadow-xl
+                opacity-0 invisible translate-y-2
+                group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                pointer-events-none group-hover:pointer-events-auto
+                transition-all duration-300 z-50
+            ">
+                            <div className="p-4 space-y-4">
+
+                                <div className="flex items-start gap-3 hover:bg-red-50 p-2 rounded-md transition">
+                                    <div className="bg-gray-100 p-2 rounded-md">
+                                        <i className="fa-solid fa-lock text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm text-gray-600">Cyber Security</h4>
+                                        <p className="text-xs text-gray-600">
+                                            XDR, Threat Detection Marketplace, Digital Forensics, Threat Intelligence, Digital Risk Protection, Email Security, Vulnerability Management, Cloud Security
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3 hover:bg-red-50 p-2 rounded-md transition">
+                                    <div className="bg-gray-100 p-2 rounded-md">
+                                        <i className="fa-solid fa-lock text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm text-gray-600">Data</h4>
+                                        <p className="text-xs text-gray-600">
+                                            Data Classification Framework, Data Discovery and Classification Automation, Enterprise Data Loss Prevention, Digital Rights Management, Secure Manage File Transfer, Data Privacy Management Platform, Data Privacy Governance Framework
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3 hover:bg-red-50 p-2 rounded-md transition">
+                                    <div className="bg-gray-100 p-2 rounded-md">
+                                        <i className="fa-solid fa-lock text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm text-gray-600">Application</h4>
+                                        <p className="text-xs text-gray-600">
+                                            Secure SDLC, Application Security Posture Management, API Security
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Services */}
+                    <div className="relative group">
+                        <a href="#services" className="flex items-center gap-1 hover:text-brandYellow transition-colors">
+                            Services
+                            <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        {/* Dropdown */}
+                        <div className="
+                absolute top-full left-0 mt-0 w-80 bg-white rounded-lg shadow-xl
+                opacity-0 invisible translate-y-2
+                group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                pointer-events-none group-hover:pointer-events-auto
+                transition-all duration-300 z-50
+            ">
+                            <div className="p-4 space-y-4">
+
+                                <div className="flex items-start gap-3 hover:bg-red-50 p-2 rounded-md transition">
+                                    <div className="bg-gray-100 p-2 rounded-md">
+                                        <i className="fa-solid fa-lock text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm text-gray-600">Assurance</h4>
+                                        <p className="text-xs text-gray-600">
+                                            Vulnerability Assessment and Penetration testing, Source Code review, Red Team Services, Configuration Review
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3 hover:bg-red-50 p-2 rounded-md transition">
+                                    <div className="bg-gray-100 p-2 rounded-md">
+                                        <i className="fa-solid fa-lock text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm text-gray-600">Awareness</h4>
+                                        <p className="text-xs text-gray-600">
+                                            Cyber War gaming Exercises, Security Awareness Training
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-3 hover:bg-red-50 p-2 rounded-md transition">
+                                    <div className="bg-gray-100 p-2 rounded-md">
+                                        <i className="fa-solid fa-lock text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-sm text-gray-600">Expert Services</h4>
+                                        <p className="text-xs text-gray-600">Expert as a Service</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* About */}
+                    <div className="relative group">
+                        <a href="#about" className="flex items-center gap-1 hover:text-brandYellow transition-colors">
+                            About
+                        </a>
+                    </div>
+
+                    {/* Careers */}
+                    <div className="relative group">
+                        <a href="#careers" className="flex items-center gap-1 hover:text-brandYellow transition-colors">
+                            Careers
+                        </a>
+                    </div>
+
+                    {/* Contact */}
+                    <a
+                        href="#contact"
+                        className={`px-4 py-2 rounded-md font-semibold transition-all duration-500
+                ${scrolled ? "bg-white text-brandRed" : "bg-brandRed text-white"}`}
+                    >
+                        Contact
+                    </a>
+                </nav>
+
+                {/* Mobile menu toggle */}
+                <div className="md:hidden">
+                    <button
+                        onClick={() => setMobileOpen(!mobileOpen)}
+                        className="relative w-10 h-10 flex flex-col justify-center items-center"
+                    >
+                        <span className={`absolute w-6 h-0.5 bg-black transform transition duration-300 ease-in-out
+                ${mobileOpen ? "rotate-45 translate-y-[2px]" : "-translate-y-2"}`}></span>
+
+                        <span className={`absolute w-6 h-0.5 bg-black transition-opacity duration-300 ease-in-out
+                ${mobileOpen ? "opacity-0" : "opacity-100"}`}></span>
+
+                        <span className={`absolute w-6 h-0.5 bg-black transform transition duration-300 ease-in-out
+                ${mobileOpen ? "-rotate-45 -translate-y-[2px]" : "translate-y-2"}`}></span>
+                    </button>
+                </div>
             </div>
 
             {/* Mobile menu */}
 
             {mobileOpen && (
                 <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full z-40">
-                    
+
                     <div className="flex flex-col p-4 space-y-4 text-black">
                         {/* Dropdown: Solutions */}
                         <div>
@@ -299,6 +438,7 @@ export default function Header() {
                             Contact
                         </a>
                     </div>
+
                 </div>
             )}
 

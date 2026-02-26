@@ -8,6 +8,8 @@ module.exports = {
         brandOrange: "#F28A30",
         brandRed: "#E64539",
         brandPurple: "#8E3BFF",
+        brandblack:"#000000",
+        brandwhite: "#ffffff"
       },
       backgroundImage: {
         brandGradient:
