@@ -1,6 +1,52 @@
 export default function Footer() {
+
+    const socialLinks = [
+        { href: "#", label: "LinkedIn", icon: "fa-linkedin" },
+        { href: "#", label: "Twitter", icon: "fa-twitter" },
+        { href: "#", label: "YouTube", icon: "fa-youtube" },
+    ];
+
+    const CybermenuItems = [
+        "XDR",
+        "Threat Detection Marketplace",
+        "Digital Forensics",
+        "Threat Intelligence",
+        "Digital Risk Protection",
+        "Email Security",
+        "Vulnerability Management",
+        "Cloud Security",
+    ];
+
+    const DatamenuItems = [
+        "Data Classification Framework",
+        "Data Discovery and Classification Automation",
+        "Enterprise Data Loss Prevention",
+        "Digital Rights Management",
+        "Secure Manage File Transfer",
+        "Data Privacy Management Platform",
+        "Data Privacy Governance Framework",
+    ];
+
+    const ApplicationmenuItems = [
+        "Secure SDLC",
+        "Application Security Posture Management",
+        "API Security",
+    ];
+
+    const ServicesmenuItems = [
+        "Awareness",
+        "Assurance",
+        "Expert Services",
+    ];
+
+    const CompanymenuItems = [
+        "About Us",
+        "Careers",
+    ];
+
+
     return (
-        <footer className="bg-brandBeige text-black px-6 py-10 bg-[#f5f0e6]">
+        <footer className="bg-brandblack text-brandwhite px-6 py-10 bg-brandblack">
             <div className="max-w-7xl mx-auto">
 
                 {/* TOP SECTION — LEFT BRANDING + RIGHT GRID */}
@@ -15,24 +61,26 @@ export default function Footer() {
                         </p>
 
                         <p className="text-sm">
-                            Phone: <a href="tel:+16504376338" className="hover:text-brandRed">+971 - 43461199</a>
+                            Phone: <a href="tel:+16504376338" className="hover:text-brandOrange">+971 - 43461199</a>
                         </p>
 
                         <p className="text-sm">
-                            Mail: <a href="" className="hover:text-brandRed">bs@technieum.com</a>
+                            Mail: <a href="" className="hover:text-brandOrange">bs@technieum.com</a>
                         </p>
 
                         <div className="mt-4 flex gap-4">
-                            <a href="#" className="bg-brandRed text-white px-4 py-2 rounded-md text-sm font-semibold">
+                            <a href="#" className="bg-brandOrange text-brandwhite px-4 py-2 rounded-md text-sm font-semibold">
                                 Contact Us
                             </a>
                         </div>
 
                         <h4 className="text-brandOrange font-semibold uppercase mt-8 mb-4 text-sm">Follow Us</h4>
                         <div className="flex gap-4">
-                            <a href="#" aria-label="LinkedIn" className="hover:text-brandRed"><i className="fab fa-linkedin text-2xl"></i></a>
-                            <a href="#" aria-label="Twitter" className="hover:text-brandRed"><i className="fab fa-twitter text-2xl"></i></a>
-                            <a href="#" aria-label="YouTube" className="hover:text-brandRed"><i className="fab fa-youtube text-2xl"></i></a>
+                            {socialLinks.map(({ href, label, icon }) => (
+                                <a key={label} href={href} aria-label={label} className="hover:text-brandOrange">
+                                    <i className={`fab ${icon} text-2xl`}></i>
+                                </a>
+                            ))}
                         </div>
                     </div>
 
@@ -43,14 +91,11 @@ export default function Footer() {
                         <div>
                             <h4 className="text-brandOrange font-semibold uppercase mb-4 text-sm">Cyber Security</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#" className="hover:text-brandRed">XDR</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Threat Detection Marketplace</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Digital Forensics</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Threat Intelligence</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Digital Risk Protection</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Email Security</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Vulnerability Management</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Cloud Security</a></li>
+                                {CybermenuItems.map((item) => (
+                                    <li key={item}>
+                                        <a href="#" className="hover:text-brandOrange">{item}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -58,13 +103,11 @@ export default function Footer() {
                         <div>
                             <h4 className="text-brandOrange font-semibold uppercase mb-4 text-sm">Data</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#" className="hover:text-brandRed">Data Classification Framework</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Data Discovery and Classification Automation</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Enterprise Data Loss Prevention</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Digital Rights Management</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Secure Manage File Transfer</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Data Privacy Management Platform</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Data Privacy Governance Framework</a></li>
+                                {DatamenuItems.map((item) => (
+                                    <li key={item}>
+                                        <a href="#" className="hover:text-brandOrange">{item}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -72,9 +115,11 @@ export default function Footer() {
                         <div>
                             <h4 className="text-brandOrange font-semibold uppercase mb-4 text-sm">Application</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#" className="hover:text-brandRed">Secure SDLC</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Application Security Posture Management</a></li>
-                                <li><a href="#" className="hover:text-brandRed">API Security</a></li>
+                                {ApplicationmenuItems.map((item) => (
+                                    <li key={item}>
+                                        <a href="#" className="hover:text-brandOrange">{item}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -82,9 +127,11 @@ export default function Footer() {
                         <div>
                             <h4 className="text-brandOrange font-semibold uppercase mb-4 text-sm">Services</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#" className="hover:text-brandRed">Awareness</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Assurance</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Expert Services</a></li>
+                                {ServicesmenuItems.map((item) => (
+                                    <li key={item}>
+                                        <a href="#" className="hover:text-brandOrange">{item}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -92,8 +139,11 @@ export default function Footer() {
                         <div>
                             <h4 className="text-brandOrange font-semibold uppercase mb-4 text-sm">Company</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#" className="hover:text-brandRed">About Us</a></li>
-                                <li><a href="#" className="hover:text-brandRed">Careers</a></li>
+                                {CompanymenuItems.map((item) => (
+                                    <li key={item}>
+                                        <a href="#" className="hover:text-brandOrange">{item}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -102,7 +152,7 @@ export default function Footer() {
 
                 {/* BOTTOM LEGAL BAR */}
                 <div className="mt-12 border-t border-gray-300 pt-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+                    <div className="flex flex-col md:flex-row justify-between items-center text-xs text-white-600">
 
                         <p className="mb-2 md:mb-0">
                             © 2023–{new Date().getFullYear()} Technieum. All rights reserved.
