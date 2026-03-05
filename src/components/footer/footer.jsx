@@ -47,7 +47,7 @@ export default function Footer() {
 
     return (
         <footer className="bg-brandblack text-brandwhite px-6 py-10 bg-brandblack">
-            <div className="max-w-7xl mx-auto">
+            <div className="w-full">
 
                 {/* TOP SECTION — LEFT BRANDING + RIGHT GRID */}
                 <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12">

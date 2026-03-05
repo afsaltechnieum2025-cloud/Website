@@ -1,15 +1,10 @@
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
-import Home from "./pages/home";
+import { RouterProvider } from "react-router-dom";
+import router from './routerconfig';
 
 
 function App() {
   return (
-    <>
-      <Header />
-      <Home />
-      <Footer />
-    </>
+    <RouterProvider router={router} />
   );
 }
 

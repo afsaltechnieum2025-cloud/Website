@@ -64,7 +64,7 @@ export default function Header() {
 
             {/* Content layer */}
 
-            <div className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-4 transition-colors duration-500">
+            <div className="relative w-full flex items-center justify-between px-6 py-4 transition-colors duration-500">
                 {/* Logo */}
                 <div className="flex items-center gap-3">
                     <img src="/logo.png" alt="Techneium Logo" className="h-14" />
