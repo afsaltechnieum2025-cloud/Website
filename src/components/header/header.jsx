@@ -59,7 +59,7 @@ export default function Header() {
             {/* Gradient background layer */}
             <div
                 className={`absolute inset-0 transition-opacity duration-700 ease-in-out pointer-events-none
-                        ${scrolled ? "opacity-100" : "opacity-0"} bg-gradient-to-r from-brandwhite via-brandblack to-brandblack`}>
+                        ${scrolled ? "opacity-100" : "opacity-0"} bg-gradient-to-r from-brandOrange via-brandblack to-brandblack`}>
             </div>
 
             {/* Content layer */}
